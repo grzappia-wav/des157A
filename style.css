@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(180deg, #191814 0%, #312417 50%, #191814 100%);
     margin: 0;
+    max-width: 1200px;
+    max-height: 750px;
 }
 
 #pagecontainer {
@@ -12,7 +14,9 @@ main {
     max-width: 1100px;
     margin: auto;
     display: flex;
-    padding: 20px;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     justify-content: space-between;
 }
 
@@ -20,26 +24,30 @@ header {
     display: flex;
     background-image: url(images/glassblocks.jpeg);
     justify-content: space-around;
+    width: 1200px;
+    height: 250px;
 }
 
 .banner {
-    width: 1200px;
-    height: 250px;
-    background: url(images/glassblocks.jpeg);
-
+    background-repeat: repeat;
+    display: block;
 }
 
 h1 {
     font-family: Arvo;
-    font-size: 4em;
+    font-size: 3.6em;
+    align-content: center;
     color:#A3D8FA;
     text-shadow: 2px 2px 3px #191814;
 }
 
 header h2 {
     font-family: Arvo;
+    font-size: 1em;
+    align-content: center;
     color:#D9DA85;
     text-shadow: 2px 2px 3px #191814;
+    padding-top: 2rem;
 }
 
 h2 {
@@ -54,9 +62,11 @@ p {
 
 article {
     border: solid 10px #616354;
-    border-radius: 7px;
+    border-radius: 1rem;
     background: #FDFEF7;
-    padding: 20px;
+    padding: 1.6rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 ul {
@@ -72,18 +82,20 @@ ul li a {
 }
 
 li {
+    font-family: Inconsolata;
+    font-size: .9em;
     list-style-type: none;
-    padding: 20px;
+    padding: 1.155rem;
+    padding-left: 0px
 }
 
 a {
-    color:#616354;
+    color: #616354;
 }
 
 ul li a:hover {
     border: solid 3px #D9DA85;
     background: radial-gradient(60.45% 60.45% at 50% 50%, #A3D8FA 0%, #FDFEF7 100%);
-
 }
 
 footer {
@@ -95,6 +107,7 @@ footer {
 footer p {
     font-family: Arvo;
     font-size: 1.2em;
+    align-content: center;
     margin: 20px;
     color:#D9DA85;
     text-shadow: 2px 2px 3px #191814;
