@@ -1,3 +1,39 @@
+body {
+    background: #616354;
+}
+
+main {
+    background: #FDFEF7;
+}
+
+header {
+    background-image: url(images/);
+}
+
 h1 {
-    color:aquamarine;
+    color:#312417;
+}
+
+h2 {
+    color:#312417
+}
+
+p {
+    color:#312417
+}
+
+.content {
+    background: #FDFEF7;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+li {
+     list-style-type: none;
 }
