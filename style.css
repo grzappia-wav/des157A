@@ -1,8 +1,13 @@
 body {
-    background: linear-gradient(180deg, #191814 0%, #312417 50%, #191814 100%);
+    /* background: linear-gradient(180deg, #191814 0%, #312417 50%, #191814 100%); */
     max-width: 1200px;
     max-height: 750px;
-    margin: auto
+    margin: auto;
+
+    animation-name: bgcolorchange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #pagecontainer {
@@ -82,7 +87,6 @@ ul li a {
     text-decoration: none;
     border: solid 3px #A3D8FA;
     border-radius: 5px;
-    /* background-color: #D9DA85; */
     background: radial-gradient(60.45% 60.45% at 50% 50%, #D9DA85 0%, #FDFEF7 100%);
     padding: 8px;
 }
@@ -102,7 +106,6 @@ a {
 ul li a:hover {
     border: solid 3px #D9DA85;
     background: radial-gradient(60.45% 60.45% at 50% 50%, #A3D8FA 0%, #FDFEF7 100%);
-    /* background-color: #A3D8FA; */
 }
 
 footer {
@@ -126,3 +129,11 @@ footer a {
     color:#A3D8FA;
     text-shadow: 2px 2px 3px #191814;
 }
+
+@keyframes bgcolorchange {
+    0%   {background-color:#191814;}
+    25%  {background-color:#312417;}
+    50%  {background-color:#616354}
+    75%  {background-color:#312417;}
+    100%   {background-color:#191814;}
+  }
