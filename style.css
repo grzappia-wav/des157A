@@ -1,9 +1,7 @@
 body {
-    /* background: linear-gradient(180deg, #191814 0%, #312417 50%, #191814 100%); */
     max-width: 1200px;
     max-height: 750px;
     margin: auto;
-
     animation-name: bgcolorchange;
     animation-duration: 20s;
     animation-iteration-count: infinite;
