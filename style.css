@@ -1,17 +1,35 @@
 body {
-    background: #616354;
+    background: linear-gradient(180deg, #191814 0%, #312417 50%, #191814 100%);
+    margin: 0;
 }
 
 main {
-    background: #FDFEF7;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 header {
-    background-image: url(images/);
+    display: flex;
+    background-image: url(images/glassblocks.jpeg);
+    justify-content: space-around;
+}
+
+.banner {
+    width: 1200px;
+    height: 250px;
+    background: url(images/glassblocks.jpeg);
+
 }
 
 h1 {
-    color:#312417;
+    color:#A3D8FA;
+}
+
+header h2 {
+    color:#D9DA85;
 }
 
 h2 {
@@ -22,8 +40,11 @@ p {
     color:#312417
 }
 
-.content {
+article {
+    border: solid 10px #616354;
+    border-radius: 7px;
     background: #FDFEF7;
+    padding: 20px;
 }
 
 ul {
@@ -32,8 +53,33 @@ ul {
 
 ul li a {
     text-decoration: none;
+    border: solid 3px #D9DA85;
+    border-radius: 5px;
+    background: radial-gradient(60.45% 60.45% at 50% 50%, #D9DA85 0%, #FDFEF7 100%);
+    padding: 8px;
 }
 
 li {
-     list-style-type: none;
+    list-style-type: none;
+    padding: 20px;
+}
+
+ul li a:hover {
+    background: radial-gradient(60.45% 60.45% at 50% 50%, #A3D8FA 0%, #FDFEF7 100%);
+
+}
+
+footer {
+    display: flex;
+    background-image: url(images/glassblocks.jpeg);
+    justify-content: space-around;
+}
+
+footer p {
+    margin: 20px;
+    color:#D9DA85;
+}
+
+footer a {
+    color:#A3D8FA;
 }
