@@ -7,7 +7,21 @@
 </head>
 <body>
     <h1>Experiment 1</h1>
+    <h2>Please open the console to see the result of my code!</h2>
 
+    <script>
+        //The JavaScript in this page creates a right triangle out of '#' in the console
+
+        //my sequence: begins with establishing the string hashes, then contiunes to my selection and loop
+        var hashes = ['#', '##', '###', '####', '#####', '######', '#######']
+        //I establish every layer of the triangle as an element of a string
+
+        //my loop: calls hashes over and over until it reaches 7 calls
+        for (var i=0; i<7; i++) {
+            console.log(hashes[i]); //my selection: tells JS to call each string element on a seperate line
+        }
+        //here, I call every element of the string in order, resulting in the '#' right triangle
+    </script>
     
 </body>
 </html>
