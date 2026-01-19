@@ -23,7 +23,6 @@ main {
     justify-content: space-between;
 }
 
-/* have to update images folder and link */
 header {
     display: flex;
     background-image: url(images/glassblocks.jpeg);
@@ -76,6 +75,13 @@ article {
 /* Border Hover Animation */
 article:hover {
     border: solid 10px #A3D8FA;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border: solid 5px #D9DA85;
+    border-radius: .75rem;
 }
 
 ul {
