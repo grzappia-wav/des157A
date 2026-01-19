@@ -1,0 +1,139 @@
+body {
+    max-width: 1200px;
+    max-height: 750px;
+    margin: auto;
+    animation-name: bgcolorchange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#pagecontainer {
+    max-width: 1200px;
+    max-height: 750px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+}
+
+/* have to update images folder and link */
+header {
+    display: flex;
+    background-image: url(images/glassblocks.jpeg);
+    justify-content: space-around;
+    width: 1200px;
+    height: 250px;
+}
+
+.banner {
+    background-repeat: repeat;
+    display: block;
+}
+
+h1 {
+    font-family: Arvo;
+    font-size: 3.6em;
+    align-content: center;
+    color:#A3D8FA;
+    text-shadow: 2px 2px 3px #191814;
+}
+
+header h2 {
+    font-family: Arvo;
+    font-size: 1em;
+    align-content: center;
+    color:#D9DA85;
+    text-shadow: 2px 2px 3px #191814;
+    padding-top: 2rem;
+}
+
+h2 {
+    font-family: Arvo;
+    color:#312417
+}
+
+p {
+    font-family: Inconsolata;
+    color:#312417
+}
+
+article {
+    border: solid 10px #616354;
+    border-radius: 1rem;
+    background: #FDFEF7;
+    padding: 1.6rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transition: border 3s ease;
+}
+/* Border Hover Animation */
+article:hover {
+    border: solid 10px #A3D8FA;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    border: solid 3px #A3D8FA;
+    border-radius: 5px;
+    background: radial-gradient(60.45% 60.45% at 50% 50%, #D9DA85 0%, #FDFEF7 100%);
+    padding: 8px;
+}
+
+li {
+    font-family: Inconsolata;
+    font-size: .9em;
+    list-style-type: none;
+    padding: 1.155rem;
+    padding-left: 0px
+}
+
+a {
+    color: #616354;
+}
+
+ul li a:hover {
+    border: solid 3px #D9DA85;
+    background: radial-gradient(60.45% 60.45% at 50% 50%, #A3D8FA 0%, #FDFEF7 100%);
+}
+
+/* have to update images folder and link */
+footer {
+    display: flex;
+    background-image: url(images/glassblocks.jpeg);
+    justify-content: space-around;
+}
+
+footer p {
+    font-family: Arvo;
+    font-size: 1.2em;
+    align-content: center;
+    margin: 20px;
+    color:#D9DA85;
+    text-shadow: 2px 2px 3px #191814;
+}
+
+footer a {
+    font-family: Arvo;
+    font-size: 1.2em;
+    color:#A3D8FA;
+    text-shadow: 2px 2px 3px #191814;
+}
+
+@keyframes bgcolorchange {
+    0%   {background-color:#191814;}
+    25%  {background-color:#312417;}
+    50%  {background-color:#616354}
+    75%  {background-color:#312417;}
+    100%   {background-color:#191814;}
+  }
