@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <p>Hi! my name is Ponyo. What's your name? </p>
+
+    <main id="response">
+        <p class="r1">Response pending...</p>
+
+        <p class="r2">Response pending...</p>
+    </main>
+</body>
+
+<script>
+    //my idea: create a page that generates a different background color for the user based on chosen fish biome
+    var name = prompt("hi! what's your name?", "");
+    var biome = (`${name}, which do you like more: tropical fish, deepsea fish, or river fish?`);
+
+    function hi(name){
+        var greeting;
+        if (name === null || name ===''){
+            //I do not understand how to use innerHTML, but I am trying
+            var change = document.querySelector(".r1");
+            function response(){
+                change.innerHTML="i'm sorry, i missed that :/";
+            }
+            // document.querySelector('#response .r1').InnerHTML="i'm sorry, i missed that :/";
+            // console.log("i'm sorry, i missed that :/");
+        } else {
+            document.querySelector('#response .r1').InnerHTML=(`hi ${name}! it's so nice to make a new friend!`);
+            // console.log(`hi ${name}! it's so nice to make a new friend!`);
+        }
+        return greeting;
+        //want to use the result of greeting (aka name) to call user by name in other interactions
+    }
+
+    function question (name, biome){
+        hi(name);
+
+        // var biome = (`${name}, which do you like more: tropical fish, deepsea fish, or river fish?`);
+        var fishTypes = ["tropical", "deepsea", "river"];
+        //idea was to use the array to simplify the choice, but I'm not sure how to do that
+        if (biome == "tropical"){
+            document.querySelector('background').style.color="turquoise";
+        } else if (biome == "deepsea"){
+            document.querySelector('background').style.color="navy";
+        } else if (biome == "river"){
+            document.querySelector('background').style.color="blue";
+        } else {
+            console.log("wow! i've never heard of that kind of fish!")
+        }
+        //even in console, this thing doesn't work
+    }
+
+    question(name, biome);
+</script>
+</html>
