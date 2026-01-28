@@ -7,56 +7,81 @@
 </head>
 <body>
     <h1>Experiment 2</h1>
-    <p>Hi! my name is Ponyo. What's your name? </p>
-
-    <main id="response">
-        <p class="r1">Response pending...</p>
-
-        <p class="r2">Response pending...</p>
-    </main>
 </body>
 
 <script>
     //my idea: create a page that generates a different background color for the user based on chosen fish biome
-    var name = prompt("hi! what's your name?", "");
-    var biome = (`${name}, which do you like more: tropical fish, deepsea fish, or river fish?`);
+    // // var name = prompt("hi! what's your name?", "");
+    // var biome = ["tropical", "deepsea", "river"];
+    
+    // // (`${name}, which do you like more: tropical fish, deepsea fish, or river fish?`);
 
-    function hi(name){
-        var greeting;
-        if (name === null || name ===''){
-            //I do not understand how to use innerHTML, but I am trying
-            var change = document.querySelector(".r1");
-            function response(){
-                change.innerHTML="i'm sorry, i missed that :/";
-            }
-            // document.querySelector('#response .r1').InnerHTML="i'm sorry, i missed that :/";
-            // console.log("i'm sorry, i missed that :/");
+    // var choice = prompt("Hi! I'm Ponyo and I'm a deepsea fish. What kind of fish are you: a tropical, deepsea, or river fish?")
+    // function hi(name){
+    //     var greeting;
+    //     if (name === null || name ===''){
+    //         //I do not understand how to use innerHTML, but I am trying
+    //         var change = document.querySelector(".r1");
+    //         function response(){
+    //             change.innerHTML="i'm sorry, i missed that :/";
+    //         }
+    //         // document.querySelector('#response .r1').InnerHTML="i'm sorry, i missed that :/";
+    //         // console.log("i'm sorry, i missed that :/");
+    //     } else {
+    //         document.querySelector('#response .r1').InnerHTML=(`hi ${name}! it's so nice to make a new friend!`);
+    //         // console.log(`hi ${name}! it's so nice to make a new friend!`);
+    //     }
+    //     return greeting;
+    //     //want to use the result of greeting (aka name) to call user by name in other interactions
+    // }
+
+    // function question(choice){
+    //     for (var i=0; i<biome.length; i++){
+    //         if (biome[i]===userColor.toLowerCase()){
+    //             return true;
+    //         }
+
+    //         return false;
+    //     }
+    //     hi(name);
+
+    //     // var biome = (`${name}, which do you like more: tropical fish, deepsea fish, or river fish?`);
+    //     var fishTypes = ["tropical", "deepsea", "river"];
+    //     //idea was to use the array to simplify the choice, but I'm not sure how to do that
+    //     if (biome == "tropical"){
+    //         document.querySelector('background').style.color="turquoise";
+    //     } else if (biome == "deepsea"){
+    //         document.querySelector('background').style.color="navy";
+    //     } else if (biome == "river"){
+    //         document.querySelector('background').style.color="blue";
+    //     } else {
+    //         console.log("wow! i've never heard of that kind of fish!")
+    //     }
+    //     //even in console, this thing doesn't work
+    // }
+
+    // question(name, biome);
+    var choice = prompt("Hi! I'm Ponyo and I'm a deepsea fish. What kind of fish are you: a tropical, deepsea, or river fish?", "");
+    var background = document.querySelector('body');
+    // var biome = ["tropical", "deepsea", "river"];
+
+    function biomeColor(){
+        if (choice === "tropical"){
+            document.querySelector('body').style.color="turquoise";
+        } else if (choice === "deepsea"){
+            document.querySelector('body').style.color="navy";
+        } else if (choice === "river"){
+            document.querySelector('body').style.color="blue";
         } else {
-            document.querySelector('#response .r1').InnerHTML=(`hi ${name}! it's so nice to make a new friend!`);
-            // console.log(`hi ${name}! it's so nice to make a new friend!`);
+            document.querySelector('h1').innerHTML=`<p>Wow! I've never met a ${choice} fish before!</p>`;
         }
-        return greeting;
-        //want to use the result of greeting (aka name) to call user by name in other interactions
+
+        return choice;
     }
 
-    function question (name, biome){
-        hi(name);
-
-        // var biome = (`${name}, which do you like more: tropical fish, deepsea fish, or river fish?`);
-        var fishTypes = ["tropical", "deepsea", "river"];
-        //idea was to use the array to simplify the choice, but I'm not sure how to do that
-        if (biome == "tropical"){
-            document.querySelector('background').style.color="turquoise";
-        } else if (biome == "deepsea"){
-            document.querySelector('background').style.color="navy";
-        } else if (biome == "river"){
-            document.querySelector('background').style.color="blue";
-        } else {
-            console.log("wow! i've never heard of that kind of fish!")
-        }
-        //even in console, this thing doesn't work
-    }
-
-    question(name, biome);
+    // function changeBackground(color){
+    //     document.querySelector("background").style.color = color;
+    //     var message = document.querySelector("h2").innerHTML=`<p>Wow! I've never met a ${biome} fish before!</p>`
+    // }
 </script>
 </html>
