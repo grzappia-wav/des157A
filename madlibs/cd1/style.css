@@ -16,6 +16,10 @@ article {
     margin: auto;
 }
 
+/* header {
+    position: relative;
+} */
+
 h1 {
     font-family: Kablammo;
     font-size: 7em;
@@ -23,6 +27,10 @@ h1 {
     color: #990057;
     display: flex;
     justify-content: center;
+}
+
+h1 img {
+    padding-top: .2em;
 }
 
 h2 {
