@@ -8,15 +8,10 @@ main {
     padding-top: 1.5em;
 }
 
-/* header {
-    position: fixed;
-    left: 50%;
-    right: 50%;
-} */
-
 article {
     max-width: 700px;
     background-color: #fff7c0;
+    border: dotted 7px #FFE300;
     border-radius: 1em;
     margin: auto;
 }
@@ -28,7 +23,6 @@ h1 {
     color: #990057;
     display: flex;
     justify-content: center;
-    /* background-color: #fff7c0; */
 }
 
 h2 {
@@ -52,9 +46,40 @@ h3 {
 p {
     font-family: Balsamiq Sans;
     margin: 2em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.3em;
+    color: #616161;
+}
+
+form {
+    font-family: Balsamiq Sans;
+    margin: 2em;
     margin-top: .5em;
     font-size: 1.3em;
     color: #616161;
+}
+
+input {
+    border: dotted 5px #C9E9F2;
+    border-radius: .5em;
+    width: 100%;
+    color:#616161;
+    margin-bottom: 1em;
+}
+
+input[type="text"]:focus {
+    border: dotted 5px #7F0047;
+    border-radius: .5em;
+    outline: none;
+}
+
+.submit {
+    text-align: center;
+    width: fit-content;
+    padding: .5em;
+    color: #fff7c0;
+    background-color:#990057;
 }
 
 .vroom {
