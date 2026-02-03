@@ -16,10 +16,6 @@ article {
     margin: auto;
 }
 
-/* header {
-    position: relative;
-} */
-
 h1 {
     font-family: Kablammo;
     font-size: 7em;
@@ -27,6 +23,10 @@ h1 {
     color: #990057;
     display: flex;
     justify-content: center;
+
+    position: sticky;
+    top: 0;
+    background:#fff7c0;
 }
 
 h1 img {
@@ -39,6 +39,8 @@ h2 {
     font-size: 3em;
     margin-left: 1em;
     margin-bottom: .5em;
+    margin-top: .5em;
+
     color: #7F0047;
 }
 
@@ -58,6 +60,7 @@ p {
     margin-bottom: .5em;
     font-size: 1.3em;
     color: #616161;
+    line-height: 1.5em;
 }
 
 form {
@@ -68,12 +71,18 @@ form {
     color: #616161;
 }
 
+label {
+    display: block;
+    min-width: 200px;
+    text-align: left;
+}
+
 input {
     border: dotted 5px #C9E9F2;
     border-radius: .5em;
-    width: 100%;
+    display: block;
     color:#616161;
-    margin-bottom: 1em;
+    margin-right: .3em;
 }
 
 input[type="text"]:focus {
@@ -82,14 +91,35 @@ input[type="text"]:focus {
     outline: none;
 }
 
+.container {
+    display: flex;
+    gap: .2em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.container input {
+    flex: 1;
+}
+
 .submit {
-    text-align: center;
+    display: block;
+    margin:auto;
     width: fit-content;
     padding: .5em;
     color: #fff7c0;
     background-color:#990057;
+    margin-bottom: 100em;
+    transition: 2s ease;
 }
 
+.submit:hover {
+    color: #990057;
+    background-color: #C9E9F2;
+    border: dotted 5px #FFE300;
+    border-radius: .5em;
+    transition: 2s ease;
+}
 .vroom {
     display: block;
     margin: auto;
