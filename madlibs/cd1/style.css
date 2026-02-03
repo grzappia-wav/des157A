@@ -1,4 +1,79 @@
-header {
+body {
+    background-image: url(images/dark_concrete.jpeg);
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 1.5em;
+}
+
+/* header {
     position: fixed;
-    background-color:white;
+    left: 50%;
+    right: 50%;
+} */
+
+article {
+    max-width: 700px;
+    background-color: #fff7c0;
+    border-radius: 1em;
+    margin: auto;
+}
+
+h1 {
+    font-family: Kablammo;
+    font-size: 7em;
+    margin: auto;
+    color: #990057;
+    display: flex;
+    justify-content: center;
+    /* background-color: #fff7c0; */
+}
+
+h2 {
+    font-family: Unkempt;
+    font-weight: 700;
+    font-size: 3em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    color: #7F0047;
+}
+
+h3 {
+    font-family: Unkempt;
+    font-weight: 700;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    color: #7F0047;
+}
+
+p {
+    font-family: Balsamiq Sans;
+    margin: 2em;
+    margin-top: .5em;
+    font-size: 1.3em;
+    color: #616161;
+}
+
+.vroom {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-family: Unkempt;
+    font-weight: 700;
+    color: #fff7c0;
+    font-size: 2em;
+}
+
+footer a {
+    color: #C9E9F2;
 }
