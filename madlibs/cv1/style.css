@@ -1,0 +1,151 @@
+body {
+    background-image: url(images/dark_concrete.jpeg);
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 1.5em;
+}
+
+article {
+    max-width: 700px;
+    background-color: #fff7c0;
+    border: dotted 7px #FFE300;
+    border-radius: 1em;
+    margin: auto;
+}
+
+h1 {
+    font-family: Kablammo;
+    font-size: 7em;
+    margin: auto;
+    color: #990057;
+    display: flex;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+    background:#fff7c0;
+}
+
+h1 img {
+    padding-top: .2em;
+}
+
+h2 {
+    font-family: Unkempt;
+    font-weight: 700;
+    font-size: 3em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+
+    color: #7F0047;
+}
+
+h3 {
+    font-family: Unkempt;
+    font-weight: 700;
+    font-size: 2em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    color: #7F0047;
+}
+
+p {
+    font-family: Balsamiq Sans;
+    margin: 2em;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.3em;
+    color: #616161;
+    line-height: 1.5em;
+}
+
+form {
+    font-family: Balsamiq Sans;
+    margin: 2em;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    color: #616161;
+}
+
+label {
+    display: block;
+    min-width: 200px;
+    text-align: left;
+}
+
+input {
+    border: dotted 5px #C9E9F2;
+    border-radius: .5em;
+    display: block;
+    color:#616161;
+    margin-right: .3em;
+}
+
+input[type="text"]:focus {
+    border: dotted 5px #7F0047;
+    border-radius: .5em;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    gap: .2em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.container input {
+    flex: 1;
+}
+
+.submit {
+    display: block;
+    margin:auto;
+    width: fit-content;
+    padding: .5em;
+    color: #fff7c0;
+    background-color:#990057;
+    transition: 2s ease;
+}
+
+.submit:hover {
+    color: #990057;
+    background-color: #C9E9F2;
+    border: dotted 5px #FFE300;
+    border-radius: .5em;
+    transition: 2s ease;
+}
+
+#feedback {
+    font-family: Balsamiq Sans;
+    text-align: center;
+    margin-bottom: 75em;
+    font-size: 1.3em;
+    color: #616161;
+}
+
+.vroom {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-family: Unkempt;
+    font-weight: 700;
+    color: #fff7c0;
+    font-size: 2em;
+}
+
+footer a {
+    color: #C9E9F2;
+}
