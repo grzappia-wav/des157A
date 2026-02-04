@@ -105,7 +105,7 @@ input[type="text"]:focus {
 
 .submit {
     display: block;
-    margin:auto;
+    margin: auto;
     width: fit-content;
     padding: .5em;
     color: #fff7c0;
@@ -122,11 +122,18 @@ input[type="text"]:focus {
 }
 
 #feedback {
-    font-family: Balsamiq Sans;
+    font-family: Unkempt;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 75em;
+    font-size: 1.7em;
+    color: #990057;
+}
+
+answer {
+    font-family: Unkempt;
+    font-weight: 700;
     font-size: 1.3em;
-    color: #616161;
+    color: #7F0047;
 }
 
 .vroom {
