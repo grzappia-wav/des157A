@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs: Code Version 2</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Kablammo&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>Mad<img src="images/pow.png" alt="POW" width="100" height="100">Libs</h1>
+
+            <h2>Instructions</h2>
+            <p>Hi there! Please fill out this form following the prompt to create a unique story!</p>
+
+            <form method="post" action="processor.php" class="form">
+                <div class="container">
+                    <label for="num">A number:</label>
+                    <input type="text" name="num" id="num">
+                </div>
+
+                <div class="container">
+                    <label for="adv">An adverb:</label>
+                    <input type="text" name="adv" id="adv">
+                </div>
+
+                <div class="container">
+                    <label for="adj1">An adjective:</label>
+                    <input type="text" name="adj1" id="adj1">
+                </div>
+
+                <div class="container">
+                    <label for="color">A color:</label>
+                    <input type="text" name="color" id="color">
+                </div>
+
+                <div class="container">
+                    <label for="adj2">An adjective:</label>
+                    <input type="text" name="adj2" id="adj2">
+                </div>
+
+                <div class="container">
+                    <label for="verb">A past tense verb:</label>
+                    <input type="text" name="verb" id="verb">
+                </div>
+
+                <div class="container">
+                    <label for="bodyPart1">A body part:</label>
+                    <input type="text" name="bodyPart1" id="bodyPart1">
+                </div>
+
+                <div class="container">
+                    <label for="feeling1">A feeling:</label>
+                    <input type="text" name="feeling1" id="feeling1">
+                </div>
+
+                <div class="container">
+                    <label for="bodyPart2">A body part:</label>
+                    <input type="text" name="bodyPart2" id="bodyPart2">
+                </div>
+
+                <div class="container">
+                    <label for="feeling2">A feeling:</label>
+                    <input type="text" name="feeling2" id="feeling2">
+                </div>
+
+                <div class="container">
+                    <label for="celeb">A celebrity:</label>
+                    <input type="text" name="celeb" id="celeb">
+                </div>
+
+                <div class="container">
+                    <label for="time">A length of time:</label>
+                    <input type="text" name="time" id="time">
+                </div>
+
+                <!-- I added a restart button to clear the form -->
+                <div class="buttons"> 
+                    <input type="button" name="restart" id="restart" value="SKIRT! Restart!" class="submit">
+                    <input type="submit" name="send" id="send-form" value="VROOM! Let's Go!" class="submit">
+                </div>
+                <!-- This div puts both the submit inputs into a parent folder so they can be styled with display flex -->
+            </form>
+
+            <div id="feedback"></div>
+
+            <div id="madlib"></div>
+            
+            <img src="images/car.png" alt="car" width="100" height="100" class="vroom">
+        </article>
+
+    </main>
+
+    <footer>
+        <p>Designed by <a href="../../index.html">Giulia Zappia</a></p>
+        <p>Contact Me: <a href="mailto:&#103;&#114;&#122;&#097;&#112;&#112;&#105;&#097;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">grzappia@ucdavis.edu</a></p>
+    </footer>
+</body>
+</html>
