@@ -67,6 +67,14 @@ h2 {
     font-size: 2em;
 }
 
+figcaption {
+    font-family: Inconsolata;
+    color:#312417;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: center;
+}
+
 article {
     border: solid 10px #616354;
     border-radius: 1rem;
