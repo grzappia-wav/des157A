@@ -1,0 +1,66 @@
+#container {
+    width: 700px;
+    height: 467px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#container div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+#container img {
+    display: block;
+    position: absolute;
+    transition: all 3s ease;
+}
+
+#center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start {
+    width: 700px;
+    left: 0;
+    top: 0;
+}
+
+/* the following things commented out were not working */
+/* .topleft,
+.topright,
+.bottomleft,
+.bottomright, */
+.center {
+    width: 1500px;
+}
+
+/* .topleft {
+    top: 0;
+    left: 0;
+}
+
+.topright {
+    top: 0;
+    left: -800px;
+}
+
+.bottomleft {
+    top: -1033px;
+    left: 0;
+}
+
+.bottomright {
+    top: -1033px;
+    left: -800px;
+} */
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
