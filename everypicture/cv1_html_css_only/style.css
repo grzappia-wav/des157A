@@ -1,15 +1,28 @@
 body {
     max-width: 1200px;
     margin: auto;
+    background: rgba(0, 0, 51, 0.9);
 }
 
-.scene1 {
-    position: relative;
-    margin: auto;
+div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    max-width: 1200px;
 }
 
 .scene1 div {
     position: absolute;
+}
+
+.scene1 {
+    position: relative;
+    display: inline-block;
+    margin: auto;
 }
 
 .scene1 img {
@@ -18,16 +31,74 @@ body {
     transition: all 3s ease;
 }
 
-h1 {
+h1 a{
     font-family: Syne Mono;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(255, 251, 228);
+    align-items: center;
+    transition: color 2s ease;
+
+    width: fit-content;
+
+    z-index: 5;
+    position: absolute;
+    left: 625px;
+    right: 500px;
+    /* left:50%;
+    right:50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+h1:hover {
+    color: rgb(255, 228, 246);
+    transition: color 2s ease;
 }
 
 p {
+    margin: auto;
+    max-width: 550px;
+    width: fit-content;
     font-family: Syne Mono;
+    font-size: 1.3em;
+    color: rgb(255, 251, 228);
+    line-height: 1.5em;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 50%);
+    border: 3px solid rgb(255, 251, 228);
+    transition: all 2s ease;
+}
+
+p:hover {
+    color: rgb(255, 228, 246);
+    background-color: rgba(0, 0, 51, 0.5);
+    border: 3px solid rgb(255, 228, 246);
+    transition: all 2s ease;
+}
+
+.format {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.backgroundImg {
+    width: 1000px;
+    height: auto;
+    border: 3px solid rgb(255, 251, 228);
+}
+
+.left {
+    position: absolute;
+}
+
+.right {
+    position: absolute;
 }
 
 img {
-    align-items: center;
+    margin: auto;
 }
 
 .center {
@@ -36,23 +107,6 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.left {
-
-}
-
-.right {
-
-}
-
-.bench {
-
-}
-
-.grass {
-
-}
-
-/* add and remove hideme with js */
 .hideme {
     opacity: 0;
 }
