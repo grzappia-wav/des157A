@@ -3,7 +3,7 @@
     console.log('reading js');
 
     const hotspots = document.querySelectorAll('#center, #left, #right');
-    const theImg = document.querySelector('#scene2 .backgroundImg');
+    const theImg = document.querySelector('#scene1 .backgroundImg');
 
     console.log(hotspots);
 
@@ -17,7 +17,6 @@
             if(event.target.id === 'center'){
                 theImg.src = 'images/open_S.jpg';
                 //this is very very close to what I want BUT I dont want the image to be zoomed in
-                //I ma experiment with innerHTML more
             }
         });
     });
@@ -31,4 +30,6 @@
             case 'right': theImg.className='right'; break;
         }
     }
+
+    //plan: incorporate z-index and .hideme into the zoom for scene 1
 })();
