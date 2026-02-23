@@ -13,8 +13,10 @@ body {
     margin: auto;
 }
 
-#center, #left, #right {
+#scene2, #scene3, #scene4, #zoom6, #zoom7 {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 150px;
     height: 150px;
     z-index: 5;
@@ -25,23 +27,10 @@ body {
     position: absolute;
     transition: all 3s ease;
 
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.8s ease;
-}
-
-.scene1 {
-    position: relative;
-    display: inline-block;
-    margin: auto;
-}
-
-.scene1 img {
-    display: block;
-    position: absolute;
-    transition: all 3s ease;
 }
 
 /* basic styling and some positioning */
@@ -67,13 +56,13 @@ h1 a:hover {
 
 p {
     margin: auto;
-    max-width: 550px;
+    max-width: 650px;
     width: fit-content;
     font-family: Syne Mono;
     font-size: 1.3em;
     color: rgb(255, 251, 228);
     line-height: 1.5em;
-    padding: 1em;
+    padding: .5em;
     background-color: rgba(0, 0, 0, 50%);
     border: 3px solid rgb(255, 251, 228);
     transition: all 2s ease;
@@ -98,45 +87,66 @@ img {
     margin: auto;
 }
 
-/* scene 1 and 2 main images */
+/* main images */
 .backgroundImg {
     width: 1000px;
     height: auto;
     border: 3px solid rgb(255, 251, 228);
 }
 
+.pop-upImg {
+    border: 3px solid rgb(255, 228, 246)
+}
 
-/* placement of hotspots on scene 1 */
-#left {
+
+/* placement of hotspots for opening*/
+#scene2 {
     top: 275px;
     left: 100px;
 }
 
-#right {
+#scene3 {
     top: 275px;
     left: 950px;
 }
 
-#center {
+#scene4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+#zoom6 {
+    top: 375px;
+    left: 100px;
+}
+
+#zoom7 {
+    top: 75px;
+    left: 950px;
+}
+
 .start {
-    transform: translate(-50%, -50%) scale(1);
+    width: 1000px;
+    height: auto;
 }
 
-.center {
-    transform: translate(-50%, -50%) scale(1.5);
+.scene2 {
+    width: 2800px;
+    left: 375px;
+    top: -859px;
 }
 
-.left {
-    transform: translate(-30%, -50%) scale(1.5);
+.scene3 {
+    width: 2800px;
+    left:-3025px;
+    top: -859px;
 }
 
-.right {
-    transform: translate(-70%, -50%) scale(1.5);
+.scene4 {
+    width: 2800px;
+    left:1325px;
+    top:-859px;
 }
 
 .hideme {
