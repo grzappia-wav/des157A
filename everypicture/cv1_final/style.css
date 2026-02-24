@@ -4,7 +4,6 @@ body {
     background: rgba(0, 0, 51, 0.9);
 }
 
-
 #container {
     width: 1000px;
     height: 667px;
@@ -26,11 +25,9 @@ body {
     display: block;
     position: absolute;
     transition: all 3s ease;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.8s ease;
 }
 
 /* basic styling and some positioning */
@@ -106,16 +103,23 @@ img {
     border: 3px solid rgb(255, 228, 246)
 }
 
-
 /* placement of hotspots for opening*/
+#scene1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 667px;
+}
+
 #scene2 {
     top: 275px;
-    left: 100px;
+    left: 0px;
 }
 
 #scene3 {
     top: 275px;
-    left: 950px;
+    left: 850px;
 }
 
 #scene4 {
@@ -143,32 +147,27 @@ img {
     left: 950px;
 }
 
-/* .start {
-    width: 1000px;
-    height: auto;
-} */
-
-#container .scene2 {
+#container .scene2 .scene3 {
     width: 2800px;
-    left: 1575px;
+    left: 1375px;
     top: 0px;
     transition: width 3s ease;
 }
 
 .scene3 {
     width: 2800px;
-    left:-3025px;
-    top: -859px;
+    left: 125px;
+    top: 0px;
+    transition: width 3s ease;
 }
 
 .scene4 {
     width: 2800px;
     left: 1325px;
     top:-859px;
+    transition: width 3s ease;
 }
 
 .hideme {
     opacity: 0;
 }
-
-
