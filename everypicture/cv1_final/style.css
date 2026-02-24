@@ -6,8 +6,8 @@ body {
 
 
 #container {
-    width: 1200px;
-    height: 700px;
+    width: 1000px;
+    height: 667px;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -94,6 +94,14 @@ img {
     border: 3px solid rgb(255, 251, 228);
 }
 
+#scene1, #scene5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 667px;
+}
+
 .pop-upImg {
     border: 3px solid rgb(255, 228, 246)
 }
@@ -116,6 +124,15 @@ img {
     transform: translate(-50%, -50%);
 }
 
+#scene4 img {
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+#scene5 {
+    position: relative;
+}
+
 #zoom6 {
     top: 375px;
     left: 100px;
@@ -131,10 +148,11 @@ img {
     height: auto;
 } */
 
-.scene2 {
+#container .scene2 {
     width: 2800px;
-    left: 375px;
-    top: -859px;
+    left: 1575px;
+    top: 0px;
+    transition: width 3s ease;
 }
 
 .scene3 {
@@ -145,7 +163,7 @@ img {
 
 .scene4 {
     width: 2800px;
-    left:1325px;
+    left: 1325px;
     top:-859px;
 }
 
