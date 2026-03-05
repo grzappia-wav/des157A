@@ -2,6 +2,22 @@
     'use strict'
     console.log('reading JS');
 
+    //overlay JS
+    document.querySelector('.open').addEventListener('click', function(){
+        document.querySelector('#overlay').className='showing';
+    });
+
+    document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('#overlay').className='hidden';
+    });
+
+    document.addEventListener('keydown', function(event){
+        if(event.key == "Escape"){
+            document.querySelector('#overlay').className='hidden';
+        }
+    });
+
+    //Game JS
     const startGame = document.querySelector('#startgame');
     const gameControl = document.querySelector('#gamecontrol');
     const game = document.querySelector('#game');
@@ -24,7 +40,7 @@
         console.log(gameData.index);
 
         gameControl.innerHTML = '<h2>The Game Has Started</h2>';
-        gameControl.innerHTML += '<button id ="quit">Wanna Quit?</button>';
+        gameControl.innerHTML += '<button id ="quit">Give Up?</button>';
 
         document.querySelector('#quit').addEventListener('click', function(){
             location.reload();
