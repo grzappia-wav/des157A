@@ -1,0 +1,204 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(0, 0, 51, 0.9);
+}
+
+#container {
+    width: 1000px;
+    height: 667px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#scene2, #scene3, #scene4, #zoom6, #zoom7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    z-index: 5;
+}
+
+#container img {
+    display: block;
+    position: absolute;
+    transition: all 3s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* basic styling and some positioning */
+h1 a{
+    font-family: Syne Mono;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(255, 251, 228);
+    align-items: center;
+    transition: color 2s ease;
+    width: fit-content;
+    z-index: 5;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 a:hover {
+    color: rgb(255, 228, 246);
+    transition: color 2s ease;
+}
+
+p {
+    margin: auto;
+    width: fit-content;
+    font-family: Syne Mono;
+    font-size: 1.3em;
+    color: rgb(255, 251, 228);
+    line-height: 1.5em;
+    padding: .5em;
+    background-color: rgba(0, 0, 0, 50%);
+    border: 3px solid rgb(255, 251, 228);
+    transition: all 2s ease;
+}
+
+p:hover {
+    color: rgb(255, 228, 246);
+    background-color: rgba(0, 0, 51, 0.5);
+    border: 3px solid rgb(255, 228, 246);
+    transition: all 2s ease;
+}
+
+/* styles most of the text */
+.format {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+}
+
+img {
+    margin: auto;
+}
+
+/* main images */
+.backgroundImg {
+    width: 1000px;
+    height: auto;
+    border: 3px solid rgb(255, 251, 228);
+}
+
+#scene1, #scene5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 667px;
+}
+
+.pop-upImg {
+    border: 3px solid rgb(255, 228, 246);
+}
+
+/* placement of hotspots for opening*/
+#scene1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 667px;
+}
+
+#scene2 {
+    top: 275px;
+    left: 0px;
+}
+
+#scene3 {
+    top: 275px;
+    left: 850px;
+}
+
+#scene4 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#scene4 img {
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+#scene5 {
+    position: relative;
+}
+
+#zoom6 {
+    top: 375px;
+    left: 100px;
+    z-index: 10;
+}
+
+#zoom7 {
+    top: 75px;
+    left: 850px;
+    z-index: 10;
+}
+
+/* I was trying to get scenes 6 and 7 centered in the container with these next 3 rules */
+#scene6, #scene7 {
+    position: absolute;
+    z-index: 9;
+}
+
+#scene6 img, #scene7 img {
+    transform: translateX(-50%);
+
+    left: 500px;
+    top: 100px;
+}
+
+#scene7 img {
+    transform: translateX(-50%);
+
+    left: 500px;
+    top: 0px;
+}
+
+#scene6 .format {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    text-align: center;
+
+}
+
+#container .scene2 .scene3 {
+    width: 2800px;
+    left: 1375px;
+    top: 0px;
+    transition: width 3s ease;
+}
+
+.scene3 {
+    width: 2800px;
+    left: 125px;
+    top: 0px;
+    transition: width 3s ease;
+}
+
+.scene4 {
+    width: 2800px;
+    left: 1325px;
+    top:-859px;
+    transition: width 3s ease;
+}
+
+.hideme {
+    opacity: 0;
+}
