@@ -3,7 +3,9 @@ body {
     color: #333;
     padding: 50px;
     line-height: 1.5em;
-    /* background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 60.1%, #FDDEB6 63.46%); */
+    background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 57%, #FDDEB6 60%);
+
+    background-repeat: none;
 }
 
 #background_img {
@@ -53,6 +55,10 @@ button {
     color: #2a674d;
 }
 
+.open {
+    color: #00A19D;
+}
+
 #overlay {
     position: absolute;
     background-color: #2a674d57;
@@ -63,6 +69,11 @@ button {
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
+    z-index: 10;
+}
+
+#overlay h2 {
+    color: #00A19D;
 }
 
 #overlay article {
@@ -101,16 +112,83 @@ button {
 
 #characters {
     display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#characters img {
+    padding-right: 6em;
+    padding-left: 5em;
 }
 
 #gamecontrol, #score {
-    display: flex;
+    position:absolute;
+}
+
+#gamecontrol {
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gamecontrol button {
+    background-color:#FFD978;
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    color: #2a674d;
+    border-radius: 10px;
+    border: dotted 5px #C8D0FF;
+    margin: auto;
 }
 
 #game {
-    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    color: #2a674d;
+}
+
+#game p {
+    text-align: center;
+}
+
+#game img {
+    width: 75px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #actions {
-    display: flex;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: Elsie Swash Caps;
+    color: #2a674d;
+}
+
+#actions button {
+    background-color:#C8D0FF;
+    font-family: Elsie Swash Caps;
+    font-size: 2.5em;
+    color: #2a674d;
+    border-radius: 10px;
+    border: dotted 5px #FFD978;
+    margin: auto;
+}
+
+#score {
+    left:31%;
+    top:97%;
+    font-family: Elsie Swash Caps;
+    color: #2a674d;
+    font-size: 1.25em;
 }

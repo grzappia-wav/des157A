@@ -20,6 +20,7 @@
     //Game JS
     const startGame = document.querySelector('#startgame');
     const gameControl = document.querySelector('#gamecontrol');
+    // const beginBtn = document.querySelector('#startgame');
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
@@ -39,8 +40,9 @@
         gameData.index = Math.round(Math.random()); //randomly rounds either to 1 or 0, thus selecting player 1 or 2
         console.log(gameData.index);
 
-        gameControl.innerHTML = '<h2>The Game Has Started</h2>';
-        gameControl.innerHTML += '<button id ="quit">Give Up?</button>';
+        // beginBtn.style.opacity = 0;
+        // gameControl.innerHTML = '<h2>The Auction has Begun!</h2>';
+        gameControl.innerHTML = '<button id ="quit">Give In?</button>';
 
         document.querySelector('#quit').addEventListener('click', function(){
             location.reload();
@@ -65,13 +67,13 @@
         gameData.roll2 = Math.floor(Math.random()*6) + 1;
 
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
-        game.innerHTML +=  `<img src="images/${gameData.dice[gameData.roll1-1]}">
-                            <img src="images/${gameData.dice[gameData.roll2-1]}">`;
+        game.innerHTML +=  `<p><img src="images/${gameData.dice[gameData.roll1-1]}"><img src="images/${gameData.dice[gameData.roll2-1]}"></p>`;
         gameData.rollSum =  gameData.roll1 + gameData.roll2;
 
         if (gameData.rollSum === 2){
-            game.innerHTML += '<p>SSSSSSS Snake Eyes!</p>';
+            game.innerHTML += '<p>The Kracken has stolen the coins!</p>';
             gameData.score[gameData.index]
+            //this function should set the rolling player's score to 0 but it dosen't
 
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); //this line switches the player
 
@@ -81,14 +83,14 @@
         
         else if (gameData.roll1 === 1 || gameData.roll2 === 1){
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p>Sorry! One of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<p>Luck is thin! Switch to ${gameData.players[gameData.index]}</p>`;
             setTimeout(setUpTurn, 2000);
             // console.log('one of the two dice rolled a 1');
         }
         
         else {
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-            actionArea.innerHTML = '<button id="rollagain">Roll Again</button> or <button id="pass">Pass</button>';
+            actionArea.innerHTML = '<button id="rollagain">Roll</button> <button id="pass">Pass</button>';
 
             document.querySelector('#rollagain').addEventListener('click', function(){
                 throwDice();
@@ -109,13 +111,13 @@
         if (gameData.score[gameData.index] > gameData.gameEnd){
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
             actionArea.innerHTML = '';
-            document.querySelector('#quit').innerHTML = 'Start a New Game?';
+            document.querySelector('#quit').innerHTML = 'Begin a New Bid';
         } else {
            showCurrentScore();
         }
     }
 
     function showCurrentScore(){
-            score.innerHTML = `<p>The score is currently: <strong>${gameData.players[0]}</strong>: <strong>${gameData.score[0]}</strong></p> and <strong>${ gameData.players[1]}</strong>: <strong>${gameData.score[1]}</strong>`;
+            score.innerHTML = `<p>The score is currently: <strong>${gameData.players[0]}</strong>: <strong>${gameData.score[0]}</strong> and <strong>${gameData.players[1]}</strong>: <strong>${gameData.score[1]}</strong></p>`;
         }
 })();
