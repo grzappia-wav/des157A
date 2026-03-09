@@ -3,6 +3,40 @@ body {
     color: #333;
     padding: 50px;
     line-height: 1.5em;
+    /* background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 60.1%, #FDDEB6 63.46%); */
+}
+
+#background_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+h1 {
+    font-family: Bonbon;
+    font-size: 4em;
+    color:#2a674d;
+    margin: 0;
+    margin-bottom: .75em;
+    text-align: center;
+}
+
+h2 {
+    font-family: Bonbon;
+    font-size: 2em;
+    color:#2a674d;
+}
+
+.open{
+    text-align: center;
+}
+
+p {
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    color: #2a674d;
 }
 
 button { 
@@ -13,9 +47,15 @@ div {
     padding: 20px;
 }
 
+button {
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    color: #2a674d;
+}
+
 #overlay {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #2a674d57;
     top: 0;
     left: 0;
     width: 100vw;
@@ -27,7 +67,8 @@ div {
 
 #overlay article {
     box-sizing: border-box;
-    background-color:#fff;
+    background-color:#ffe3bc;
+    border-radius: 5%;
     padding: 20px;
     width: 50vw;
     height: 80vh;
@@ -36,6 +77,16 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: scroll;
+}
+
+#overlay button {
+    background-color:#C8D0FF;
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    color: #2a674d;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
 }
 
 .hidden {
@@ -48,13 +99,18 @@ div {
     opacity: 1;
 }
 
+#characters {
+    display: flex;
+}
+
 #gamecontrol, #score {
-    background-color: aliceblue;
+    display: flex;
 }
 
 #game {
-    background-color:#eaeaea;
+    display: flex;
 }
+
 #actions {
-    background-color: silver;
+    display: flex;
 }
