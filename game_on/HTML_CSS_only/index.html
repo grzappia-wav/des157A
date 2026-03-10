@@ -7,6 +7,7 @@
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,23 +29,23 @@
             <p>For every item, only two merfolk may participate. Whomever is able to scrounge up 30 gold coins first wins the treasure! Since our Lady is not a greedy ruler, she will not accept anymore than 30 coins. If you offer more than 30, the treasure will go to your opposing merfolk!</p>
             <p>To gather coins, these lucky dice will help you. Roll them to discover more coins. If you grow tired of rolling- or your luck goes thin- you may pass your turn to your opponent. If one of the dice rolls a 1, you will receive the coins for that roll, but Poseidon decrees that the turn must change to your opponent. If you roll snake eyes, shiver with fear! All your gold coins will be lost, taken by the Kraken!!</p>
             <p>Remember, although your luck may grow thin, you can only pass thrice! Make your judgement well! <em>*gavel bangs*</em> Let us begin!</p>
-            <button class="close">I understand</button>
+            <button id="close" class="jingle">I understand</button>
         </article>
     </section>
 
     <section id="characters">
         <div>
-            <img src="images/MerMelia.PNG" alt="MerMelia" width="400px" height="auto">
+            <img src="images/MerMelia.PNG" alt="MerMelia" width="400" height="400">
             <p><strong>Player 1</strong>: MerMelia</p>
         </div>
         <div>
-            <img src="images/AMaid.PNG" alt="AaMaid" width="400px" height="auto">
+            <img src="images/AMaid.PNG" alt="AaMaid" width="400" height="400">
             <p><strong>Player 2</strong>: AaMaid</p>
         </div>
     </section>
 
     <div id="gamecontrol">
-        <button id="startgame">Begin Bidding!</button>
+        <button id="startgame" class="bubbles">Begin Bidding!</button>
     </div>
 
     <div id="game"></div>

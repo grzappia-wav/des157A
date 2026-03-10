@@ -4,8 +4,6 @@ body {
     padding: 50px;
     line-height: 1.5em;
     background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 57%, #FDDEB6 60%);
-
-    background-repeat: none;
 }
 
 #background_img {
