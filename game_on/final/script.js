@@ -129,7 +129,7 @@
         } else if (gameData.score[gameData.index] > gameData.gameEnd){ //I added this else if statement to switch players if a player score higher than 30, after switching, the current player is announced the winner
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 
-            score.innerHTML = `Uh oh, <h2>${gameData.players[gameData.index]} wins by default!`;
+            score.innerHTML = `<h2>Uh oh, ${gameData.players[gameData.index]} wins by default!`;
         } else {
            showCurrentScore();
         }
