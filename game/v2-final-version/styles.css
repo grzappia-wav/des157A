@@ -1,5 +1,4 @@
 body {
-    /* background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 57%, #FDDEB6 60%); */
     background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 60.1%);
 
 }
@@ -24,7 +23,7 @@ h1 {
 h2 {
     font-family: Bonbon;
     font-size: 2em;
-    color:#2a674d;
+    color: #00A19D;
     margin: 0;
 }
 
