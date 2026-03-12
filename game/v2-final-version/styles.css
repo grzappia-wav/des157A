@@ -187,6 +187,9 @@ button {
 }
 
 
+li {
+    list-style-type: none;
+}
 
 #sources {
     position: absolute;
@@ -200,6 +203,7 @@ button {
     border-radius: 10px;
     border: dotted 5px #C8D0FF;
     margin: auto;
+    padding: 7px;
 }
 
 #sources a {
@@ -235,6 +239,7 @@ button {
     border-radius: 10px;
     border: dotted 5px #C8D0FF;
     margin: auto;
+    padding: 7px;
 }
 
 #return a {
