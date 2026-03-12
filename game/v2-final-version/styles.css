@@ -1,9 +1,7 @@
 body {
-    font-family: Arial;
-    color: #333;
-    padding: 50px;
-    line-height: 1.5em;
-    background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 57%, #FDDEB6 60%);
+    /* background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 57%, #FDDEB6 60%); */
+    background: linear-gradient(180deg, #C8D0FF 0%, #B1F5F5 38.94%, #B1F5F5 60.1%);
+
 }
 
 #background_img {
@@ -18,8 +16,8 @@ h1 {
     font-family: Bonbon;
     font-size: 4em;
     color:#2a674d;
-    margin: 0;
-    margin-bottom: .75em;
+    margin: .25em;
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -27,9 +25,10 @@ h2 {
     font-family: Bonbon;
     font-size: 2em;
     color:#2a674d;
+    margin: 0;
 }
 
-.open{
+#open{
     text-align: center;
 }
 
@@ -41,10 +40,6 @@ p {
 
 button { 
     padding: 10px;
-}
-
-div {
-    padding: 20px;
 }
 
 button {
@@ -113,20 +108,21 @@ button {
     justify-content: space-between;
     font-size: 1.5em;
     text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
-#characters img {
-    padding-right: 6em;
-    padding-left: 5em;
+#characters p {
+    margin: 0;
 }
 
 #gamecontrol, #score {
-    position:absolute;
+    position: absolute;
 }
 
 #gamecontrol {
-    position:absolute;
-    top: 30%;
+    position: absolute;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -143,7 +139,7 @@ button {
 
 #game {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -165,7 +161,7 @@ button {
 
 #actions {
     position: absolute;
-    top: 95%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -185,8 +181,64 @@ button {
 
 #score {
     left:31%;
-    top:97%;
+    top:87%;
     font-family: Elsie Swash Caps;
     color: #2a674d;
     font-size: 1.25em;
+}
+
+
+
+#sources {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color:#FFD978;
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    border-radius: 10px;
+    border: dotted 5px #C8D0FF;
+    margin: auto;
+}
+
+#sources a {
+    text-decoration: none;
+    color: #2a674d;
+}
+
+#s_format {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#s_format h2 {
+    text-align: center;
+}
+
+#s_format a {
+    text-decoration: none;
+    color: #00A19D;
+}
+
+#return {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color:#FFD978;
+    font-family: Elsie Swash Caps;
+    font-size: 1.25em;
+    border-radius: 10px;
+    border: dotted 5px #C8D0FF;
+    margin: auto;
+}
+
+#return a {
+    text-decoration: none;
+    color: #2a674d;
 }

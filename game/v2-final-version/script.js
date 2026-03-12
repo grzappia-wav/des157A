@@ -8,16 +8,29 @@
     const coins = document.querySelector('.jingle');
     const coinWav = new Audio('audio/coin_drop.wav');
 
-    bubbles.addEventListener('mousedown', function(){
-        bubWav.play();
-    });
+    // bubbles.addEventListener('mousedown', function(){
+    //     bubWav.currentTime = 0;
+    //     bubWav.play();
+    // });
 
-    coins.addEventListener('mousedown', function(){
+    // coins.addEventListener('mousedown', function(){
+    //     coinWav.play();
+    // });
+
+    document.addEventListener('mousedown', function(event){
+    if (event.target.classList.contains('bubbles')){
+        bubWav.currentTime = 0;
+        bubWav.play();
+    }
+
+    if (event.target.classList.contains('jingle')){
+        coinWav.currentTime = 0;
         coinWav.play();
+    }
     });
 
     //overlay JS
-    document.querySelector('.open').addEventListener('click', function(){
+    document.querySelector('#open').addEventListener('click', function(){
         document.querySelector('#overlay').className='showing';
     });
 
@@ -34,7 +47,6 @@
     //Game JS
     const startGame = document.querySelector('#startgame');
     const gameControl = document.querySelector('#gamecontrol');
-    // const beginBtn = document.querySelector('#startgame');
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
@@ -63,7 +75,6 @@
             bubWav.play();
         });
 
-        // console.log('set the turn');
         setUpTurn();
     }); //END start game event listener
 
@@ -86,19 +97,16 @@
 
         if (gameData.rollSum === 2){
             game.innerHTML += '<p>The Kracken has stolen your coins!</p>';
-            //this function should set the rolling player's score to 0 but it dosen't
-            gameData.score[gameData.index]
+            gameData.score[gameData.index] = 0; //this sets the players score back to 0
             gameData.index ? (gameData.index = 0) : (gameData.index = 1); //this line switches the player
 
             setTimeout(setUpTurn, 2000);
-            // console.log('snake eyes!');
         }
         
         else if (gameData.roll1 === 1 || gameData.roll2 === 1){
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>Luck is thin! Switch to ${gameData.players[gameData.index]}</p>`;
             setTimeout(setUpTurn, 2000);
-            // console.log('one of the two dice rolled a 1');
         }
         
         else {
@@ -113,7 +121,6 @@
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                 setUpTurn();
             });
-            // console.log('neither die was a 1, game contiunes ...');
         }
 
         showCurrentScore();
@@ -126,10 +133,16 @@
 
             actionArea.innerHTML = '';
             document.querySelector('#quit').innerHTML = 'Begin a New Bid';
-        } else if (gameData.score[gameData.index] > gameData.gameEnd){ //I added this else if statement to switch players if a player score higher than 30, after switching, the current player is announced the winner
+        } else if (gameData.score[gameData.index] > gameData.gameEnd){ //I added this else if statement 
+            //switches players if a player scores higher than 30
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-
+            //after switching, the current player is announced the winner
             score.innerHTML = `<h2>Uh oh, ${gameData.players[gameData.index]} wins by default!`;
+            
+            //these 3 lines clear the game and action areas, then prompt to begin a new game
+            game.innerHTML = '';
+            actionArea.innerHTML = '';
+            document.querySelector('#quit').innerHTML = 'Begin a New Bid';
         } else {
            showCurrentScore();
         }
